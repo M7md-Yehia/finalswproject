@@ -27,11 +27,13 @@ jobs:
 
       # Step 4: Install dependencies
       - name: Install dependencies
-        run: flutter pub get
+        run: |
+          cd movemate_ui
+          flutter pub get
 
       # Step 5: Run all tests
       - name: Run all tests
         run: |
           cd movemate_ui
-          flutter run lib/main_pages/HomePage.dart
+          ls -R # List all files to confirm structure
           flutter test
