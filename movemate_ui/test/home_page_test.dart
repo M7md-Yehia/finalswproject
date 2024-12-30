@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_test/flutter_test.dart';
-import 'package:movemate_ui/main_pages/HomePage.dart';
+import 'package:movemate_ui/lib/main_pages/HomePage.dart';
 
 void main() {
   group('HomePage Tests', () {
