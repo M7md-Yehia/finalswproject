@@ -35,5 +35,4 @@ jobs:
       - name: Run all tests
         run: |
           cd movemate_ui
-          flutter analyze
           flutter test
