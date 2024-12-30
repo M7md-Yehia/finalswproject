@@ -35,5 +35,5 @@ jobs:
       - name: Run all tests
         run: |
           cd movemate_ui
-          ls -R # List all files to confirm structure
+          flutter analyze
           flutter test
