@@ -33,4 +33,4 @@ jobs:
       # Step 5: Run all tests
       - name: Run all tests
         run: |
-          flutter movemate_ui/test/home_page_test.dart
+          flutter test movemate_ui/test/home_page_test.dart
