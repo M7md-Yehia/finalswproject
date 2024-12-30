@@ -28,7 +28,6 @@ jobs:
       # Step 4: Install dependencies
       - name: Install dependencies
         run: |
-          cd movemate_ui
           flutter pub get
 
       # Step 5: Run all tests
