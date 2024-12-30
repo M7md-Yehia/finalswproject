@@ -32,4 +32,6 @@ jobs:
 
       # Step 5: Run all tests
       - name: Run all tests
-        run: flutter test
+        run: |
+          cd movemate_ui
+          flutter test
