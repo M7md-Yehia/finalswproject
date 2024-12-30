@@ -18,8 +18,7 @@ jobs:
         with:
           flutter-version: '3.22.0'
 
-    
-
+  
       # Step 3: Verify Flutter and Dart versions
       - name: Verify installation
         run: |
@@ -34,4 +33,5 @@ jobs:
       - name: Run all tests
         run: |
           cd movemate_ui
+          flutter run lib/main_pages/HomePage.dart
           flutter test
