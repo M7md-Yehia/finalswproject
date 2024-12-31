@@ -1,0 +1,34 @@
+name: Flutter login test
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  test:
+    name: Run Flutter Tests
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Checkout the repository
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # Step 2: Set up Flutter
+      - name: Set up Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.22.0'
+
+      # Step 3: Install dependencies
+      - name: Install dependencies
+        run: |
+          flutter pub get
+
+      # Step 4: Run tests
+      - name: Run Flutter tests
+        run: flutter test --coverage
