@@ -29,7 +29,9 @@ jobs:
       - name: Install dependencies
         run: |
           flutter pub get
-
+      - name: Debug assets directory
+        run: |
+             ls -la assets/images/
       # Step 5: Run all tests
       - name: Run all tests
         run: |
