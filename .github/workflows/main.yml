@@ -31,7 +31,7 @@ jobs:
           flutter pub get
       - name: Debug assets directory
         run: |
-             ls -la assets/images/
+             ls -ld assets/images/
       # Step 5: Run all tests
       - name: Run all tests
         run: |
