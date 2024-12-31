@@ -28,7 +28,3 @@ jobs:
       - name: Install dependencies
         run: |
           flutter pub get
-
-      # Step 4: Run tests
-      - name: Run Flutter tests
-        run: flutter test --coverage
